@@ -1,4 +1,4 @@
-name: APK-J Build
+name: APK-M Build
 
 on:
 #  push:
@@ -18,7 +18,7 @@ jobs:
         run: git clone -b main --depth=1 https://github.com/q215613905/TVBoxOS.git
       - name: DIY
         run: |
-          chmod +x diy-J.sh
+          chmod +x diy-m.sh
           bash ${{ github.workspace }}/diy-m.sh
       - name: Build With Gradle
         run: |
